@@ -1,0 +1,13 @@
+[app]
+environment = "production"
+demo_mode = false
+default_role = "guest"
+
+[ai]
+provider = "gemini"
+
+[integrations]
+redis_enabled = true
+jira_enabled = true
+news_enabled = true
+marine_api_enabled = true

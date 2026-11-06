@@ -1,0 +1,36 @@
+[app]
+name = "Sea-Info Agent"
+environment = "development"
+demo_mode = true
+default_role = "guest"
+timezone = "Asia/Seoul"
+
+[ui]
+layout = "wide"
+show_demo_role_switcher = true
+items_per_page = 12
+
+[uploads]
+max_bytes = 10485760
+allowed_types = ["jpg", "jpeg", "png", "webp"]
+max_image_dimension = 1600
+
+[ai]
+provider = "mock"
+model = "gemini-2.5-flash"
+daily_limit_member = 20
+daily_limit_guest = 3
+cache_ttl_seconds = 86400
+
+[storage]
+sqlite_path = "data/sea_info.sqlite3"
+
+[points]
+post_create = 10
+daily_cap = 50
+
+[integrations]
+redis_enabled = false
+jira_enabled = false
+news_enabled = false
+marine_api_enabled = false

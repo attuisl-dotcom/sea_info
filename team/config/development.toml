@@ -1,0 +1,12 @@
+[app]
+environment = "development"
+demo_mode = true
+
+[ai]
+provider = "mock"
+
+[integrations]
+redis_enabled = false
+jira_enabled = false
+news_enabled = false
+marine_api_enabled = false
